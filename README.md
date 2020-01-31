@@ -6,12 +6,23 @@
 * Vanilla HTML5 / ES6 / CSS3  
 * Progressive Web App
 * [WebRTC](http://webrtc.org/)
-* [WebSockets](http://www.websocket.org/) fallback (iDevices don't support WebRTC)
+* [WebSockets](http://www.websocket.org/) fallback
 * [NodeJS](https://nodejs.org/en/)
 * [Material Design](https://material.google.com/)
 
+## Support the Snapdrop Community
+Snadprop is free. Still, we have to pay for the server. If you want to contribute, please use PayPal
 
-### Frequently Asked Questions
+[<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif">](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=74D2NE84JHCWG&source=url)
+
+or Bitcoin:
+
+[<img src="https://coins.github.io/thx/logo-color-large-pill-320px.png" alt="CoinThx" width="200"/>](https://coins.github.io/thx/#1K9zQ8f4iTyhKyHWmiDKt21cYX2QSDckWB?label=Snapdrop&message=Thanks!%20Your%20contribution%20helps%20to%20keep%20Snapdrop%20free%20for%20everybody!) 
+
+Thanks a lot for supporting free and open software!
+
+
+## Frequently Asked Questions
 
 ### Instructions
 * [Video Instructions](https://www.youtube.com/watch?v=4XN02GkcHUM) (Big thanks to [TheiTeckHq](https://www.youtube.com/channel/UC_DUzWMb8gZZnAbISQjmAfQ))
@@ -23,11 +34,8 @@
 ##### What about the connection? Is it a P2P-connection directly from device to device or is there any third-party-server?
 It uses a P2P connection if WebRTC is supported by the browser. (WebRTC needs a Signaling Server, but it is only used to establish a connection and is not involved in the file transfer).
 
-If WebRTC isn’t supported (Safari, IE) it uses a Web Sockets fallback for the file transfer. The server connects the clients with each other.  
-
 ##### What about privacy? Will files be saved on third-party-servers?
-None of your files are ever saved on any server. 
-Snapdrop doesn't even use a database. If you are curious have a look [at the Server](https://github.com/RobinLinus/snapdrop/blob/master/server/).
+None of your files are ever sent to any server. Files are sent only between peers. Snapdrop doesn't even use a database. If you are curious have a look [at the Server](https://github.com/RobinLinus/snapdrop/blob/master/server/).
 
 ##### Is SnapDrop a fork of ShareDrop?
 No. ShareDrop is built with Ember. Snapdrop is built with vanilla ES6. 
@@ -38,7 +46,7 @@ ShareDrop uses WebRTC only and isn't compatible with Safari browsers. Snapdrop u
 ### Snapdrop is awesome! How can I support it? 
 * [File bugs, give feedback, submit suggestions](https://github.com/RobinLinus/snapdrop/issues)
 * Share Snapdrop on your social media.
-* [Buy me a cup of coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R9C5E42UYEQCN)
+* [Buy me a cup of coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=74D2NE84JHCWG&source=url)
 * Fix bugs and make a pull request. 
 * Do security analysis and suggestions
 
@@ -64,3 +72,12 @@ For an nginx configuration example see `nginx/default.conf`.
 
 ## Licences
 * Thanks to [Mark DiAngelo]() for the [Blop Sound](http://soundbible.com/2067-Blop.html)
+
+
+
+## Desktop App 
+Note, if you are using Google Chrome you can easily install Snapdrop PWA on your desktop by clicking the install Button in the top-right corner.
+
+If you are not using Chrome, you can install the [Snapdrop Desktop App](https://github.com/infin1tyy/snapdrop-desktop) built on top of Electrum. (Thanks to Infin1tyy!).
+
+
